@@ -1,0 +1,163 @@
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(90deg, #da2b88 0%, #d1b710 40%, #5310d1 100%);
+}
+
+p {
+    color: white;
+}
+
+
+/* .nav-link {
+    color: rgb(246, 239, 239);
+}
+
+.nav-link.active {
+    color: rgb(246, 239, 239);
+} */
+/* Стили для неактивной ссылки */
+.navbar-light .navbar-nav .nav-link {
+    color: white; 
+}
+
+/* Стили для активной ссылки */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(222, 97, 197);
+}
+
+.navbar-brand img, .navbar-brand {
+    color: white !important;
+}
+
+
+
+.logo-cat {
+    width: 60px;
+    
+}
+
+.navbar-toggler {
+    background-color: rgb(222, 97, 197);
+}
+
+
+.sidebar {
+    color:  white;
+    background: linear-gradient(270deg, #ee3abe 0%, #3c1485 100%);
+}
+
+.card {
+    background: linear-gradient(270deg, #ee3abe 0%, #3c1485 100%);
+    color: white;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
+.slide-text,
+.footer-text {
+    color: white;
+    margin: auto auto; /* по х и по у задать центральное положение */
+
+}
+
+
+footer,
+.btn-primary {
+    background: linear-gradient(270deg, #ee3abe 0%, #3c1485 100%);
+}
+
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: myAnim 2s ease 0s 1 alternate backwards;
+}
+
+.bgvideo {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgvideo video {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.effect {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.259);
+}
+
+.video-text {
+    color: white;
+    z-index: 2;
+}
+
+.effect {
+
+}
+
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+
